@@ -1,5 +1,4 @@
 object LeftFoot : Picture() {        //Creem l'object LeftFoot que ve relacionada amb la classe mare Pictures
-
     fun printLeftFoot() {       //Printem el dibuix del penjat segons les vides que tingui l'usuari
 
         val paint = "                                                                                \n" +
@@ -42,6 +41,5 @@ object LeftFoot : Picture() {        //Creem l'object LeftFoot que ve relacionad
             if (it == '\n')         //Nou mètode que hem après a l'última clase que vam fer
                 Thread.sleep(100)
         }
-
     }
 }

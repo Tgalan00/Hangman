@@ -12,7 +12,6 @@ class Hangman(
         'h', 'i', 'j', 'k', 'l', 'm', 'n',
         'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
     )
-
     fun createWord() {
         //paraulaAdivinar = paraulaOriginal.map { '-' } as ArrayList        // Segona opció que es podria fer per crear la paraula
 
@@ -21,12 +20,10 @@ class Hangman(
         }
         println("La palabra contiene ${paraulaAdivinar.size} letras: $paraulaAdivinar")     //Mostrem per pantalla el numero de lletres que conté la paraula
     }
-
     fun showVidas() {       //Declarem la funció showVidas
 
         println("\nVidas: $vidas")
     }
-
     fun insert() {      //Declarem la variable insert, encarregada d'anar demanant a l'usuari que introdueixi lletra a lletra
 
         var videsPerdudes = true       //Declarem un boolean y el posem amb true
@@ -82,9 +79,6 @@ class Hangman(
                 paraulaAdivinar[i] = x
             }
         }
-
-
-
         if (videsPerdudes) {        //En el cas de que en cap moment hagi entrat en el if anterior aleshores voldrà dir que ninguna lletra coincideix
 
             println("\nLastima! La letra que has introducido no forma parte de la palabra! ")
@@ -93,7 +87,6 @@ class Hangman(
         }
         print(paraulaAdivinar)      //Mostrarem per pentalla la paraulaAdivinar
     }
-
     fun restarVida() {      //Declarem la funcio restarVida
 
         vidas -= 1      //vidas= vidas -1
@@ -120,7 +113,6 @@ class Hangman(
             Hanged.printHanged()
         }
     }
-
     fun bucle() {           //Aquesta funció podríem diure que es la funció base per a que tot el joc funcioni fins que acerti la paraula o perdi totes les vides
         createWord()
         while (vidas > 0 && paraulaOriginal != paraulaAdivinar) {       //El while se seguirà fent fins que l'usuari tingui més de 0 vides i quan la paraulaOriginal sigui diferent de paraulaAdivinar
@@ -130,7 +122,6 @@ class Hangman(
         }
         condicion()         //Cridarem la funcio condicion
     }
-
     fun replay() {      //Declarem la funcio replay per demanar al usuari si vol tornar a jugar
         print("Quieres volver a jugar? (1-Si, 2-No) ")
         var retry = readln().toIntOrNull() ?: -1
@@ -150,7 +141,6 @@ class Hangman(
             Images.imageCredits()
         }
     }
-
     fun condicion() {       //Declarem la funcio per indicarli al jugador si ha guanyat o ha perdut
         if (vidas > 0) {        //Cas en el que ha guanyat ja que les seves vides son > 0
             println("Felicidades!!! Has ganado!")

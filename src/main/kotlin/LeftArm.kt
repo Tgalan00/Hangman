@@ -1,5 +1,4 @@
-object LeftArm : Picture() {         //Creem l'object LeftArm que ve relacionada amb la classe mare Pictures
-
+object LeftArm : Picture() {        //Creem l'object LeftArm que ve relacionada amb la classe mare Pictures
     fun printLeftArm() {        //Printem el dibuix del penjat segons les vides que tingui l'usuari
 
         val paint = "                                                                                \n" +
@@ -42,6 +41,5 @@ object LeftArm : Picture() {         //Creem l'object LeftArm que ve relacionada
             if (it == '\n')         //Nou mètode que hem après a l'última clase que vam fer
                 Thread.sleep(100)
         }
-
     }
 }

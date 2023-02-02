@@ -42,6 +42,5 @@ object RightArm : Picture() {        //Creem l'object RightArm que ve relacionad
             if (it == '\n')     //Nou mètode que hem après a l'última clase que vam fer
                 Thread.sleep(100)
         }
-
     }
 }

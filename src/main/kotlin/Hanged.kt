@@ -1,5 +1,4 @@
 object Hanged : Picture() {     //Creem l'object Hanged que ve relacionada amb la classe mare Pictures
-
     fun printHanged() {     //Printem el dibuix del penjat segons les vides que tingui l'usuari
 
         val paint = "                                                                                \n" +

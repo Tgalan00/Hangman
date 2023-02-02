@@ -1,5 +1,4 @@
-object Images {     //Creem l'object Images per mostrar diferents imatges per pantalla a l'usuari
-
+object Images {   //Creem l'object Images per mostrar diferents imatges per pantalla a l'usuari
     fun imageOk() {     //Funcio imageOk
         val paint =
             "                                                                                                    \n" +
@@ -30,10 +29,7 @@ object Images {     //Creem l'object Images per mostrar diferents imatges per pa
                 Thread.sleep(100)       //Nou mètode que hem après a l'última clase que vam fer
         }
     }
-
-
     fun imageSadFace() {    //Funcio imageSadFace
-
 
         val paint = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
                 "@@@@@@@@@@@@@@@@@@@@@#///////#@@@@@@@@@@@@@@@@@@@@\n" +
@@ -62,7 +58,6 @@ object Images {     //Creem l'object Images per mostrar diferents imatges per pa
                 Thread.sleep(100)
         }
     }
-
     fun imageThanks() {     //Funcio imageThanks
 
         val paint =
@@ -78,7 +73,6 @@ object Images {     //Creem l'object Images per mostrar diferents imatges per pa
                 Thread.sleep(100)
         }
     }
-
     fun imageCredits() {        //Funcio imageCredits
 
         val paint = " ██████╗██████╗ ███████╗ █████╗ ██████╗  ██████╗     ██████╗  ██████╗ ██████╗ \n" +

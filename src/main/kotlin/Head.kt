@@ -1,6 +1,4 @@
 object Head : Picture() {       //Creem l'object Head que ve relacionada amb la classe mare Pictures
-
-
     fun printHead() {       //Printem el dibuix del penjat segons les vides que tingui l'usuari
         val paint = "                                                                                \n" +
                 "                      /@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +

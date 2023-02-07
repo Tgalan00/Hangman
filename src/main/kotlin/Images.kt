@@ -1,3 +1,5 @@
+import kotlin.system.exitProcess
+
 object Images {   //Creem l'object Images per mostrar diferents imatges per pantalla a l'usuari
     fun imageOk() {     //Funcio imageOk
         val paint =
@@ -98,5 +100,7 @@ object Images {   //Creem l'object Images per mostrar diferents imatges per pant
             if (it == '\n')
                 Thread.sleep(100)
         }
+
+         exitProcess(0)
     }
 }

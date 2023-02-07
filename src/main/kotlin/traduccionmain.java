@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
- class Mainkt {
+ class traduccion {
 
     public void presentacio() {     //Funcio presentacio, encarregada de donar la benvinguda a l'usuari
         Scanner scan = new Scanner(System.in);
@@ -78,9 +78,9 @@ import java.util.Scanner;
 
     public static void main(String[] args) {
 
-        new Mainkt().presentacio();  //Cridarem la funció presentacio
+        new traduccion().presentacio();  //Cridarem la funció presentacio
 
-        Game game = new Game(new Mainkt().guessWord(), new Mainkt().difficulty());       //Declarem la variable game la cual anira a la classe Game per a que ens retorni la variable hangman creada segons les dades que ha introduit l'usuari
+        Game game = new Game(new traduccion().guessWord(), new traduccion().difficulty());       //Declarem la variable game la cual anira a la classe Game per a que ens retorni la variable hangman creada segons les dades que ha introduit l'usuari
 
         game.getHangman().bucle();        //cridem la funcio bucle en la classe Hangman per jugar al joc fins arribar a finalitzar-lo
 

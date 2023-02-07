@@ -26,6 +26,7 @@ fun presentacio() {     //Funcio presentacio, encarregada de donar la benvinguda
     println("Encantado $name, vas a jugar al juego del ahorcado")
     println("Cuando vayas insertando letras, se te mostraran todas las letras del abecedario en forma de matriz, las marcadas en verde són aquellas que ya has introducido previamente, estas listo?")
 }
+
 fun guessWord(): Int {       //Declarem la funcio per demanar a l'usuari si vol adivinar la paraula creada en la llista que ve per default pel sistema o prefereix que un company li introdueixi una paraula
 
     print("Quieres adivinar la palabra creada por default o prefieres adivinar una creada por uno de tus compañeros? (1-Default, 2-Compañero): ")
@@ -39,6 +40,7 @@ fun guessWord(): Int {       //Declarem la funcio per demanar a l'usuari si vol 
     }
     return wordefaultOrFriend       //retornem la variable
 }
+
 fun difficulty(): Int {     //declarem la funcio difficulty per demanar a l'usuari quina dificultat vol triar
 
     print("Por favor, escoge la dificultad (1-Facil, 2-Normal, 3-Dificil): ")
@@ -64,15 +66,18 @@ fun difficulty(): Int {     //declarem la funcio difficulty per demanar a l'usua
 
     }
 }
+
 fun main() {
 
     presentacio()  //Cridarem la funció presentacio
+    while (true) {      //Fem aquest bucle per a que es repeteixi en cas de tornar a jugar
 
-    val game = Game(
-        guessWord(),
-        difficulty()
-    )       //Declarem la variable game la cual anira a la classe Game per a que ens retorni la variable hangman creada segons les dades que ha introduit l'usuari
+        val game = Game(
+            guessWord(),
+            difficulty()
+        )       //Declarem la variable game la cual anira a la classe Game per a que ens retorni la variable hangman creada segons les dades que ha introduit l'usuari
 
-    game.hangman.bucle()        //cridem la funcio bucle en la classe Hangman per jugar al joc fins arribar a finalitzar-lo
+        game.hangman.bucle()        //cridem la funcio bucle en la classe Hangman per jugar al joc fins arribar a finalitzar-lo
+    }
 }
 
